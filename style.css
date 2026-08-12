@@ -42,13 +42,15 @@
 
 body
 {
-    font-size: 16px;
+    font-size: 1rem;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--color-stone);
+    font-family: var(--fam-out);
+    color: var(--color-stone-brown);
 }
 
 .container
@@ -81,12 +83,151 @@ body
 .head-title
 {
     font-family: var(--fam-young);
-    font-size: 40px;
+    font-size: 2.5rem;
+    color: black;
 }
 
 .dish-info
 {
-    font-size: 16px;
-    font-family: var(--fam-out);
+    font-size: 1rem;
     color: var(--color-stone-brown);
 }
+
+.prep-time
+{
+    background: var(--color-rose-wash);
+    padding: 20px 0 20px 40px;
+    width: 100%;
+    border-radius: var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prep-title
+{
+    font-size: 1.25rem;
+    color: var(--color-rose);
+    font-weight: var(--weight-outfit-dark);
+}
+
+.prep-list
+{
+    color: var(--color-stone-brown);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 0 0 20px;
+}
+
+.prep-list li::marker
+{
+    color: var(--color-rose);
+}
+
+.prep-list li span
+{
+    font-weight: var(--weight-outfit-dark);
+}
+
+.ingredient-title,
+.instruction-title,
+.nutrition-title
+{
+    color: var(--color-brown);
+    font-family: var(--fam-young);
+    font-size: 1.87rem;
+}
+
+.instruction,
+.nutrition
+{
+    border-block-start: 2px solid var(--color-stone-wash);
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+}
+
+.ingredients,
+.instruction,
+.nutrition
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.ingredient-list,
+.instruction-list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 20px;
+    gap: 10px;
+}
+
+.ingredient-list li
+{
+    padding: 0 0 0 10px;
+}
+
+.ingredient-list li::marker
+{
+    color: var(--color-brown);
+    font-weight: var(--weight-outfit-dark);
+}
+
+.instruction-list li
+{
+    padding: 0 0 0 10px;
+}
+
+.instruction-list li::marker
+{
+    color: var(--color-brown);
+    font-weight: var(--weight-outfit-dark);
+}
+
+.instruction-list li span
+{
+    font-weight: var(--weight-outfit-dark);
+}
+
+.table
+{
+    width: 100%;
+}
+
+.table-row
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+}
+
+.bar
+{
+    border-block-start: 2px solid var(--color-stone-wash);
+}
+
+.table-row span
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 0;
+    color: var(--color-brown);
+    font-weight: var(--weight-outfit-dark);
+}
+
+
+/* @media (max-width: 500px)
+{
+
+} */
